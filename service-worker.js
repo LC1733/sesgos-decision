@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sesgos-decision-v2';
+const CACHE_NAME = 'sesgos-decision-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,7 +8,12 @@ const APP_SHELL = [
   './icon-512-maskable.svg',
   './app1.b64',
   './app2.b64',
-  './app3.b64',
+  './app3a.b64',
+  './app3b1.b64',
+  './app3b2a.b64',
+  './app3b2b1a.b64',
+  './app3b2b1b.b64',
+  './app3b2b2.b64',
   './app4.b64'
 ];
 
