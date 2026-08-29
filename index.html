@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cargando...</title><style>body{margin:0;background:#0f1115;color:#ece7db;font:16px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}.msg{opacity:.75}</style></head>
+<body><div class="msg">Cargando visualización...</div><script>
+(async()=>{
+  const parts=await Promise.all(['payload1.b64','payload2.b64'].map(async f=>{
+    const r=await fetch(f,{cache:'no-store'}); if(!r.ok) throw new Error(f+': '+r.status); return (await r.text()).trim();
+  }));
+  const b64=parts.join('');
+  const bin=atob(b64); const bytes=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+  const ds=new DecompressionStream('gzip');
+  const html=await new Response(new Blob([bytes]).stream().pipeThrough(ds)).text();
+  document.open(); document.write(html); document.close();
+})().catch(e=>document.body.innerHTML='<pre style="white-space:pre-wrap;padding:24px">No se pudo cargar la página. '+String(e)+'</pre>');
+</script></body></html>
