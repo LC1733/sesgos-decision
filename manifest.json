@@ -1,0 +1,17 @@
+{
+  "name": "Matriz de Sesgos en la Decisión — Kahneman & Tversky",
+  "short_name": "Sesgos",
+  "description": "18 sesgos cognitivos organizados en las tres fases de una decisión, con autodiagnóstico interactivo.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "lang": "es",
+  "icons": [
+    { "src": "./icon-192.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon-512.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon-512-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
