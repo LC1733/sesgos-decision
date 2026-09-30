@@ -25,6 +25,9 @@
   const ds=new DecompressionStream('gzip');
   const html=await new Response(new Blob([bytes]).stream().pipeThrough(ds)).text();
   document.open();document.write(html);document.close();
+  // Salto directo a sección (#quiz-section, #phases, …): document.write descarta el fragmento de URL.
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(h) requestAnimationFrame(()=>document.getElementById(h)?.scrollIntoView({behavior:'smooth',block:'start'}));
 })().catch(err=>{
   document.body.innerHTML='<pre style="padding:24px;white-space:pre-wrap">No se pudo cargar la aplicación. '+String(err)+'</pre>';
 });
