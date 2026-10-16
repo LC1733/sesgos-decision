@@ -1,0 +1,84 @@
+{
+  "title": "Matriz de Sesgos en la Decisión",
+  "subtitle": "Kahneman & Tversky · 18 sesgos en tres fases de la decisión, mapa de flujo y autodiagnóstico",
+  "type": "catalogo",
+  "themes": [
+    "decision"
+  ],
+  "status": "publicada",
+  "pwa": true,
+  "deeplink": "hash",
+  "sections": [
+    {
+      "id": "flow-svg",
+      "title": "Mapa de flujo: de la fase al sesgo",
+      "keywords": [
+        "mapa",
+        "flujo",
+        "fase",
+        "sesgo",
+        "kahneman",
+        "tversky"
+      ]
+    },
+    {
+      "id": "quiz-section",
+      "title": "Autodiagnóstico",
+      "keywords": [
+        "quiz",
+        "test",
+        "autodiagnóstico",
+        "evaluación",
+        "perfil"
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Percepción del problema",
+      "keywords": [
+        "sesgo de confirmación",
+        "anclaje",
+        "efecto marco",
+        "heurística de disponibilidad",
+        "heurística de representatividad",
+        "efecto halo"
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Evaluación de opciones",
+      "keywords": [
+        "aversión a la pérdida",
+        "teoría de las prospectivas",
+        "exceso de confianza",
+        "efecto dotación",
+        "sesgo de status quo",
+        "ilusión de control"
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Ejecución y revisión",
+      "keywords": [
+        "sesgo de retrospectiva",
+        "sesgo de autoservicio",
+        "falacia del coste hundido",
+        "sesgo de actuación",
+        "aversión al arrepentimiento",
+        "sesgo de optimismo",
+        "sesgo de negatividad"
+      ]
+    },
+    {
+      "id": "extra-grid",
+      "title": "Otros sesgos relevantes",
+      "keywords": [
+        "descuento hiperbólico",
+        "efecto dunning-kruger",
+        "efecto de arrastre (bandwagon)",
+        "ilusión de frecuencia",
+        "parálisis por exceso de opciones"
+      ]
+    }
+  ]
+}
